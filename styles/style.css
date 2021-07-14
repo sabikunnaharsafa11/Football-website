@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* ---------------
+headers section
+---------------*/
+.head-banner{
+    background-color: #2D25A0;
+     
+   
+}
+.banner-parents{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 150px 140px 86px 150px;
+}
+.banner-info{
+ width: 50%;
+}
+.head-photo {
+   width: 50%;
+}
+.head-photo img{
+    width: 100%;
+    height: 438px;
+    transition: width 2s ease-in;
+}
+/*--------------
+ animation code here 
+ ------------------*/
+.head-banner:hover .head-photo img{
+   width: 300px;
+   
+}
+
+.banner-tittle{
+    font-Size : 64px;
+    Line height : 80px;
+    color: #ffffff;
+    margin-bottom:27px;
+}
+.banner-button{
+    background-color: #E02C6D;
+    padding: 10px 24px;
+    color: #ffffff;
+   
+}
+.fa-arrow-right{
+    margin-left: 10px;
+    width: 15px;
+}
+
+/* -----------------
+payers sections star
+------------------ */
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 100px;
+    grid-column-gap: 30px;
+    grid-row-gap: 27px;
+    margin-top: 70px;
+   
+    
+}
+
+.player{
+padding: 15px;
+box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+ }
+   
+.player img{
+    width: 100%;
+}
+.player title{
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 13px;
+    margin-bottom: 10px;
+}
+.player-info{
+    margin: 0;
+}
+  
+/* -----------
+chanel start 
+---------------*/
+.chanel{
+margin-top: 0;
+text-align: center;
+}
+.live {
+    width: 80%;
+    height: 600px;
+    padding: 11px;
+}
+.live-tittle{
+    font-size: 50px;
+    color: #545252;
+}
+.iframe {
+    width: 940px;
+    height: 600px;
+    padding: 20px;
+}
+
+/* -----------
+gallary start
+----------------- */
+.gallary{
+    padding: 0 2%;
+    display: flex;
+    margin-top: 50px;
+    
+  
+}
+.photo-left{
+    margin-right: 15px;
+}
+.photo{}
+.photo img{
+    width: 400px;
+    height: 527px;
+    object-fit: cover;
+}
+.photos-right{
+   display: flex;
+  
+   
+
+}
+.photos-right img {
+    height: 255px;
+    width: 250px;
+    object-fit: cover;
+    margin: 0px 10px 10px 0px;
+}
+
+/* ----------
+footer section start
+-------------*/
+.foot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 180px 0px 40px 0;
+}
+.footer-logo{ 
+    
+}
+    
+.footer-logo img{
+    width: 484px;
+    height: 180;
+   align-items: center;
+   margin-bottom: 20px;
+}
+.social{}
+.social-icon{
+        color: gray;
+        Width: 41px;
+        Height: 33px;
+        padding-top: 6px;
+        border-radius: 25px;
+        Left: 138px;
+        background-color: #d4d4d4;
+        font-size: 25px;
+        margin: 0px 14px;
+        text-align: center;
+    }
+
+footer p{
+    color: black;
+    font-size: 18px;
+}
+/* Satrt media query css start form here */
+
+/* -----------------
+mobile device 
+---------------*/
+@media only screen and (max-width:667px) {
+    .banner-parents{
+       display: flex;
+       flex-direction:column;
+        padding: 10px;
+    }
+    .banner-info{
+     width: 100%;
+    }
+    .head-photo {
+       width: 100%;
+       margin-top: 30px;
+    }
+    .head-photo img{
+        width: 330px;
+        height: 260px;
+       padding: 10px;
+       
+    }
+    .banner-tittle{
+        font-Size : 30px;
+        margin-bottom:20px;
+    }
+
+/*-------------
+     payers sections start
+ ------------------- */
+.players{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0 15px;
+    margin-top: 47px;
+}
+.player title{
+    font-size: 20px;
+}
+
+/*--------------
+ gallary start 
+ --------------*/
+.gallary{
+    padding: 0 2%;
+    display: flex;
+    margin-top: 20px;
+  
+}
+.photo-left{
+    margin-right: 10px;
+}
+.photo{}
+.photo img{
+    width: 150px;
+    height: 212px;
+    object-fit: cover;
+}
+.photos-right{
+   display: flex;
+   flex-direction: column;
+
+
+}
+.photos-right img {
+    height: 100px;
+    width: 80px;
+    margin: 0px 7px 4px 0px;
+}
+
+ 
+/* ------------------
+chanel start
+-------------------- */
+.chanel {
+    height: 350px;
+}
+    .live-tittle {
+        font-size: 25px;
+        margin-bottom: 0;
+    }
+    .iframe {
+        width: 420px;
+        height: 300px;
+        padding: 1s0px;
+        margin-top:0 ;
+        margin-bottom: 0;
+        padding: 0;
+    }
+/* --------------
+footer section start
+-------------------*/
+.foot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   margin-bottom: 50px;
+   margin-top: 0;
+}
+.footer-logo{ 
+    
+}
+    
+.footer-logo img{
+    width: 200px;
+    height: 100;
+   align-items: center;
+   margin-bottom: 15px;
+}
+.social-icon {
+    Width: 32px;
+    Height: 25px;
+    font-size: 20px;
+    margin: 0px 3px;
+   
+}
+footer p {
+    font-size: 16px;
+}
+}
+/*------------------
+ tablet device start form here
+ -------------- */
+@media only screen and (max-width:992px) and (min-width:668px){
+    .banner-parents{
+        display: flex;
+        flex-direction:row;
+         padding: 30px;
+     }
+     .head-banner:hover .head-photo img{
+        width: 250px;
+        
+        
+     }
+     .head-photo img{
+         width: 350px;
+         height: 280px; 
+        
+     }
+     .banner-tittle{
+         font-Size : 40px;
+     }
+/* ------------
+payers sections start
+------------- */
+.players{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+
+/* ----------
+gallary start
+---------------- */
+.gallary{
+    padding: 0 2%;
+    display: flex;
+    margin-top: 20px;
+  
+}
+.photo-left{
+    margin-right: 10px;
+}
+.photo{}
+.photo img{
+    width: 319px;
+    height: 300px;
+    object-fit: cover;
+    margin-left: 80px;
+}
+.photos-right{
+   display: flex;
+   flex-direction: column;
+
+
+}
+.photos-right img {
+    height: 144px;
+    width: 100px;
+    margin: 0px 7px 4px 0px;
+}
+
+ 
+/* ------------------
+chanel start
+-------------------- */
+.chanel {
+    height: 380px;
+}
+    .live-tittle {
+        font-size: 25px;
+        margin-bottom: 0;
+    }
+    .iframe {
+        width: 600px;
+        height: 300px;
+        padding: 20px;
+        margin-top:0 ;
+        margin-bottom: 0;
+    }
+
+/*------- 
+footers start
+------------- */
+.footer-logo img {
+    width: 350px;
+}
+}
